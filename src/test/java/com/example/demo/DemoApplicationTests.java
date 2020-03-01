@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.get;
 import static org.hamcrest.CoreMatchers.is;
 
 //@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.DEFINED_PORT)
+//@SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.DEFINED_PORT)
 class DemoApplicationTests {
 
     @Test
@@ -21,28 +21,24 @@ class DemoApplicationTests {
 
     @Test
     public void testCustomerList() {
-        /*
 
-        get("http://localhost:8080/employees")
+        get("http://35.239.118.177:8080/employees")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body("size()", is(1));
 
-
-        get("http://localhost:8080/employees/1")
+        get("http://35.239.118.177:8080/employees/1")
                 .then()
                 .assertThat()
                 .statusCode(200)
-                .body("id", Matchers.equalTo("1"));
+                .body("id", Matchers.equalTo(1));
 
-        get("http://localhost:8080/employees/1")
+        get("http://35.239.118.177:8080/employees/1")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body("name", Matchers.equalTo("Murali"));
-
-         */
 
     }
 
