@@ -3,7 +3,7 @@ echo "killing current process running on 8080..."
 fuser -n tcp -k 8080
 
 #test comment to test the auto builds
-echo "Test# 10"
+echo "Test# 20"
 
 #sleep for 10 seconds to kill the process
 sleep 10
