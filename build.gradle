@@ -38,10 +38,10 @@ dependencies {
 }
 
 test {
-    //useJUnitPlatform()
-    useTestNG()
+    useJUnitPlatform()
+    //useTestNG()
 
-    testLogging {
-        events "PASSED", "FAILED", "SKIPPED"
-    }
+    //testLogging {
+        //events "PASSED", "FAILED", "SKIPPED"
+    //}
 }
