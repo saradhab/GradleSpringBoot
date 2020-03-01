@@ -1,2 +1,2 @@
-fuser -n tcp -k 8080
-nohup gradle bootRun > bootRun.log 2>&1
+sudo fuser -n tcp -k 8080
+sudo nohup gradle bootRun > bootRun.log 2>&1
