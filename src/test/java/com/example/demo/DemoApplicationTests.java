@@ -22,19 +22,19 @@ class DemoApplicationTests {
     @Test
     public void testCustomerList() {
 
-        get("http://localhost:8080/employees")
+        get("http://localhost:9090/employees")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body("size()", is(1));
 
-        get("http://localhost:8080/employees/1")
+        get("http://localhost:9090/employees/1")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body("id", Matchers.equalTo(1));
 
-        get("http://localhost:8080/employees/1")
+        get("http://localhost:9090/employees/1")
                 .then()
                 .assertThat()
                 .statusCode(200)
